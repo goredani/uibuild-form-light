@@ -32,19 +32,7 @@ body {
             }
         }
 
-        .subject {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            font-size: 16px;
-            background-color: #FFFFFF;
-            width: 100%;
-            max-width: 480px;
-            height: 64px;
-            color: #467745;
-            margin-bottom: 26px;
-            padding: 0 20px;
-        }
-
+        .subject,
         .comment {
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;
@@ -52,8 +40,17 @@ body {
             background-color: #FFFFFF;
             width: 100%;
             max-width: 480px;
-            height: 120px;
             color: #467745;
+        }
+
+        .subject {
+            height: 64px;
+            margin-bottom: 26px;
+            padding: 0 20px;
+        }
+
+        .comment {
+            height: 120px;
             padding: 20px;
             margin-bottom: 31px;
         }
@@ -103,4 +100,15 @@ body {
             text-transform: uppercase;
         }
     }
+}
+
+::placeholder {
+    color: #467745;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #467745;
 }

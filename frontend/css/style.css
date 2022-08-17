@@ -32,18 +32,7 @@ body .main h1 {
     text-align: left;
   }
 }
-body .main .subject {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  background-color: #FFFFFF;
-  width: 100%;
-  max-width: 480px;
-  height: 64px;
-  color: #467745;
-  margin-bottom: 26px;
-  padding: 0 20px;
-}
+body .main .subject,
 body .main .comment {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -51,8 +40,15 @@ body .main .comment {
   background-color: #FFFFFF;
   width: 100%;
   max-width: 480px;
-  height: 120px;
   color: #467745;
+}
+body .main .subject {
+  height: 64px;
+  margin-bottom: 26px;
+  padding: 0 20px;
+}
+body .main .comment {
+  height: 120px;
   padding: 20px;
   margin-bottom: 31px;
 }
@@ -92,4 +88,27 @@ body .main button {
   letter-spacing: 0.2em;
   padding: 0 80px;
   text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  color: #467745;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: #467745;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  color: #467745;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #467745;
 }/*# sourceMappingURL=style.css.map */
