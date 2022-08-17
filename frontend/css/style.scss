@@ -1,0 +1,106 @@
+body {
+    background-color: #F7E4D4;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: 520px) {
+            width: calc(100% - 40px);
+        }
+
+
+        h1 {
+            width: 100%;
+            font-family: 'EB Garamond', serif;
+            font-weight: 400;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 16px;
+            color: #467745;
+
+            @media screen and (max-width: 520px) {
+                font-size: 36px;
+                text-align: left;
+            }
+        }
+
+        .subject {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            background-color: #FFFFFF;
+            width: 100%;
+            max-width: 480px;
+            height: 64px;
+            color: #467745;
+            margin-bottom: 26px;
+            padding: 0 20px;
+        }
+
+        .comment {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            background-color: #FFFFFF;
+            width: 100%;
+            max-width: 480px;
+            height: 120px;
+            color: #467745;
+            padding: 20px;
+            margin-bottom: 31px;
+        }
+
+        .accept-terms {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 39px;
+            width: 100%;
+
+            .accept {
+                background-color: #FFFFFF;
+                width: 20px;
+                height: 20px;
+                margin-right: 18px;
+                cursor: pointer;
+            }
+
+            label {
+                p {
+                    font-size: 16px;
+                    color: #467745;
+
+                    .link {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+        button {
+            font-family: 'EB Garamond', serif;
+            border-radius: 40px;
+            font-weight: 400;
+            font-size: 21px;
+            height: 80px;
+            width: 280px;
+            background-color: #467745;
+            color: #F7E4D4;
+            letter-spacing: 0.2em;
+            padding: 0 80px;
+            text-transform: uppercase;
+        }
+    }
+}
