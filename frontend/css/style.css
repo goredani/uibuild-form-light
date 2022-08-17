@@ -67,8 +67,8 @@ body .main .accept-terms {
 }
 body .main .accept-terms .accept {
   background-color: #FFFFFF;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   margin-right: 18px;
   cursor: pointer;
 }
